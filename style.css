@@ -32,6 +32,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+}
 
     .card {
         background: #fff;
@@ -48,6 +49,24 @@
     p {
         color: #334155;
     }
+
+    .card:not(:has(h3)):not(:has(img)) {
+        p{
+            font-size: 1.25rem;
+            line-height: 1.4rem;
+        }
+    }
+
+    .card:not(:has(img)){
+        h3{
+            font-size: 1.6rem;
+        }
+    }
+
+    li.card:has(img){
+        li.card{
+        padding: 0%;
+        }
 }
 
 @layer reset {
