@@ -5,7 +5,7 @@
     --color-text-button: #FFF;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    --hide-overlay: 1;
 }
 
 
@@ -16,7 +16,7 @@ body{
 
 section{
     display: grid;
-    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
 }
 
 h1{
