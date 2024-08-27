@@ -9,8 +9,46 @@
     --font-heading: 1.75rem;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    --hide-overlay: 1;
 }
 
 
 /* Begynd her... */
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: var(--card-padding);
+    
+}
+
+.ikoner{
+    display: flex;
+    flex-direction: row;
+}
+
+svg{
+    color: var(--color-icon);
+}
+
+img{
+    grid-row: 1/-1;
+    border-radius: 50%;
+    width: var(--image-width);
+}
+
+h1{
+    font-size: var(--font-heading);
+}
+h2{
+    color: mediumspringgreen;
+}
+
+/* tilføjet efter jeg har set det*/
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--card-padding);
+}
