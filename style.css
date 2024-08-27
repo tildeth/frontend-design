@@ -63,11 +63,14 @@
         }
     }
 
-    li.card:has(img){
-        li.card{
-        padding: 0%;
+    .card:has(img){
+        padding: 0;
+
+        .content{
+            padding: 1rem;
         }
-}
+        }
+
 
 @layer reset {
     * {
