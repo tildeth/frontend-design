@@ -17,10 +17,8 @@
 
 article{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    padding: var(--card-padding);
-    
+    grid-auto-columns: auto 1fr;
+    gap: 10px;
 }
 
 .ikoner{
@@ -36,6 +34,9 @@ img{
     grid-row: 1/-1;
     border-radius: 50%;
     width: var(--image-width);
+    pad: var(--card-padding);
+    object-fit: cover;
+    align-items: center;
 }
 
 h1{
@@ -47,8 +48,8 @@ h2{
 
 /* tilføjet efter jeg har set det*/
 .info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-row: 2/-1;
     padding: var(--card-padding);
 }
