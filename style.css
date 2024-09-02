@@ -51,4 +51,15 @@ section {
         background: var(--gray-100);
         padding: .4rlh .6rlh;
     }
+
+    @media (width < 600px){
+        grid: revert;
+
+        figure,
+        .content{
+            display: revert;
+            grid-area: revert; 
+        }
+    }
+
 }
