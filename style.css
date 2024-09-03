@@ -2,7 +2,11 @@
     inline-size: min(650px, 100% - 2rem);
     display: block grid;
     grid-template-columns: auto auto;
+    grid-template-rows: 1fr auto;
     gap: 0 1em;
+
+        
+    
 }
 
 .content {
@@ -11,6 +15,18 @@
     background: #fff;
     box-shadow: 0px 15px 35px 0px rgba(13, 23, 38, 0.07);
     border-inline-start: 7px solid #4f48ed;
+    grid-column: 1;
+    grid-row: 2/-1;
+   
+}
+
+img{
+    grid-row: 1/-1;
+    grid-column: 2;
+    align-self: stretch;
+    object-fit: cover;
+    grid: subgrid / subgrid;
+    display: grid;
 }
 
 .tag {
